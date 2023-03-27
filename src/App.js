@@ -17,7 +17,7 @@ function App() {
         <a
           href="https://github.com/SBrosky/react-weather"
           target="_blank"
-          rel="no referrer"
+          rel="noreferrer"
         >
           {" "}
           Open-Source
