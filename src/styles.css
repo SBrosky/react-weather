@@ -1,4 +1,6 @@
 body {
+  display: block;
+  margin: 0 auto;
   font-family: "Fira Sans", sans-serif;
   max-width: 800px;
   color: #363d3f;
@@ -10,5 +12,8 @@ body {
   padding: 30px;
   margin: 20px;
   border-radius: 10px;
-  opacity: 6;
+}
+
+a {
+  text-decoration: none;
 }

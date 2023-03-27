@@ -6,11 +6,24 @@ import Forecast from "./Forecast";
 
 function App() {
   return (
-    <div className="App container-grey">
+    <div className="App container-grey ">
       <Search />
       <Location />
       <Current />
       <Forecast />
+
+      <p>
+        This app was coded by Steph Brosky and is
+        <a
+          href="https://github.com/SBrosky/react-weather"
+          target="_blank"
+          rel="no referrer"
+        >
+          {" "}
+          Open-Source
+        </a>
+        .
+      </p>
     </div>
   );
 }
