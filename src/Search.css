@@ -1,0 +1,40 @@
+.change-city-bar {
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.submit-button {
+  background: rgba(45, 148, 185, 0.2);
+  font-size: 18px;
+  font-weight: 300;
+  padding: 6px 20px;
+  border-radius: 10px;
+  border: 1px solid #363d3f;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-in-out;
+}
+
+.submit-button:hover {
+  background: rgba(181, 179, 227, 0.5);
+  cursor: pointer;
+}
+
+.current-button {
+  background: rgba(45, 148, 185, 0.2);
+  font-size: 18px;
+  font-weight: 300;
+  padding: 6px 20px;
+  border-radius: 10px;
+  border: 1px solid #363d3f;
+  transition: all 200ms ease-in-out;
+  margin: 10px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  justify-content: start;
+}
+
+.current-button:hover {
+  background: rgba(181, 179, 227, 0.5);
+  cursor: pointer;
+}

@@ -1,21 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Search from "./Search.js";
+import Location from "./Location.js";
+import Current from "./Current.js";
+import Forecast from "./Forecast";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello World</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container-grey">
+      <Search />
+      <Location />
+      <Current />
+      <Forecast />
     </div>
   );
 }

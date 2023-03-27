@@ -1,0 +1,11 @@
+.local-weather {
+  padding: 15px 0 0 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgba(45, 148, 185, 0.2);
+}
+
+.current-weather {
+  font-size: 36px;
+  font-weight: 400;
+}

@@ -1,0 +1,14 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  max-width: 800px;
+  color: #363d3f;
+  background-image: url(./background-clouds.jpg);
+}
+
+.container-grey {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  opacity: 6;
+}
