@@ -1,5 +1,4 @@
 import "./App.css";
-import Search from "./Search.js";
 
 import Weather from "./Weather.js";
 import Forecast from "./Forecast";
@@ -7,10 +6,7 @@ import Forecast from "./Forecast";
 function App() {
   return (
     <div className="App container-grey ">
-      <Search />
-
       <Weather defaultCity="Vancouver" />
-      <Forecast />
 
       <p>
         This app was coded by Steph Brosky and is
