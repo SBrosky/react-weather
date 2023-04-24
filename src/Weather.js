@@ -72,7 +72,7 @@ export default function Weather(props) {
         <div className="row local-weather">
           <div className="col-6">
             <p className="current-weather">
-              <img src={weatherData.iconUrl} />
+              <img src={weatherData.iconUrl} alt="weather icon" />
               <span id="degrees">{Math.round(weatherData.temperature)}°C</span>
             </p>
           </div>
