@@ -4,44 +4,15 @@ import "./Forecast.css";
 export default function Forecast() {
   return (
     <div className="Forecast">
-      <div className="Forecast">
-        <div className="container">
-          <div className="row forecast-weather">
-            <div className="col">
-              <p>
-                Monday <br />
-                11°C <br />
-                <span>🌤️</span>
-              </p>
+      <div className="container">
+        <div className="row forecast-weather">
+          <div className="col">
+            <div className="forecast-day">Mon</div>
+            <div className="forecast-temps">
+              <span className="temp-max">11°</span>
+              <span className="temp-min">9°C</span>
             </div>
-            <div className="col">
-              <p>
-                Tuesday <br />
-                11°C <br />
-                <span>🌤️</span>
-              </p>
-            </div>
-            <div className="col">
-              <p>
-                Wednesday <br />
-                11°C <br />
-                <span>🌤️</span>
-              </p>
-            </div>
-            <div className="col">
-              <p>
-                Thursday <br />
-                11°C <br />
-                <span>🌤️</span>
-              </p>
-            </div>
-            <div className="col">
-              <p>
-                Friday <br />
-                11°C <br />
-                <span>🌤️</span>
-              </p>
-            </div>
+            <span className="forecast-icon">🌤️</span>
           </div>
         </div>
       </div>
