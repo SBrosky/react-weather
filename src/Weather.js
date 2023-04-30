@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
+import Forecast from "./Forecast";
 import "./Weather.css";
 import axios from "axios";
 
@@ -11,6 +12,7 @@ export default function Weather(props) {
     console.log(response);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
@@ -84,6 +86,7 @@ export default function Weather(props) {
             </p>
           </div>
         </div>
+        <Forecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
