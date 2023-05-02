@@ -9,7 +9,6 @@ export default function Forecast(props) {
   function handleResponse(response) {
     setForecastData(response.data.daily);
     setLoaded(true);
-    console.log(forecastData);
   }
 
   if (loaded) {
@@ -31,10 +30,10 @@ export default function Forecast(props) {
     );
   } else {
     let apiKey = `a5acb752426cd8188485c35694980e3a`;
-    let lat = props.coordinates.lat;
-    let lon = props.coordinates.lon;
-    let url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+    let latitude = props.coords.lat;
+    let longitude = props.coords.lon;
+    let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);
-    return null;
+    return <div>Loading</div>;
   }
 }
