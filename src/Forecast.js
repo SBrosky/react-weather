@@ -5,6 +5,7 @@ import "./Forecast.css";
 export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecastData, setForecastData] = useState(null);
+  let weatherIconUrl = `https://openweathermap.org/img/wn/${forecastData[0].weather[0].icon}@2x.png`;
 
   function handleResponse(response) {
     setForecastData(response.data.daily);
@@ -12,17 +13,18 @@ export default function Forecast(props) {
   }
 
   if (loaded) {
+    console.log(forecastData);
     return (
       <div className="Forecast">
         <div className="container">
           <div className="row forecast-weather">
             <div className="col">
-              <div className="forecast-day">Mon</div>
+              <div className="forecast-day">{forecastData[0].dt}</div>
               <div className="forecast-temps">
-                <span className="temp-max">11°</span>
-                <span className="temp-min">9°C</span>
+                <span className="temp-max">{forecastData[0].temp.max}°</span>
+                <span className="temp-min">{forecastData[0].temp.min}°C</span>
               </div>
-              <span className="forecast-icon">🌤️</span>
+              <img src={weatherIconUrl} alt="weather icon" />
             </div>
           </div>
         </div>
