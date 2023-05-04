@@ -13,10 +13,19 @@ export default function Forecast(props) {
   }
 
   if (loaded) {
-    console.log(forecastData);
     return (
-      <div className="Forecast">
-        <WeatherForecastDay data={forecastData[0]} />
+      <div className="Forecast  weather-forecast ">
+        <div className="row">
+          {forecastData.map(function (dailyWeather, index) {
+            if (index > 0 && index < 6) {
+              return (
+                <div className="col">
+                  <WeatherForecastDay data={dailyWeather} />
+                </div>
+              );
+            }
+          })}
+        </div>
       </div>
     );
   } else {
