@@ -29,7 +29,12 @@ export default function WeatherForecastDay(props) {
           <span className="temp-max">{maxTemp()}°</span>
           <span className="temp-min">{minTemp()}°C</span>
         </div>
-        <img src={weatherIconUrl} alt="weather icon" className="daily-icon" />
+        <img
+          src={weatherIconUrl}
+          alt="weather icon"
+          className="daily-icon"
+          width="50"
+        />
       </div>
     </div>
   );
