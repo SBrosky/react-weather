@@ -72,13 +72,13 @@ export default function Weather(props) {
         </h2>
 
         <div className="row local-weather">
-          <div className="col-6">
+          <div className="col">
             <p className="current-weather">
-              <img src={weatherData.iconUrl} alt="weather icon" />
+              <img src={weatherData.iconUrl} alt="weather icon" width="75" />
               <span id="degrees">{Math.round(weatherData.temperature)}°C</span>
             </p>
           </div>
-          <div className="col-6">
+          <div className="col">
             <p className="weather-details">
               <div id="description">{weatherData.description}</div>
               <div id="humidity">Humidity: {weatherData.humidity}%</div>
