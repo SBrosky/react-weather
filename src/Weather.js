@@ -63,7 +63,6 @@ export default function Weather(props) {
               </div>
             </div>
           </form>
-          <button className="current-button">Current Location</button>
         </div>
 
         <h1>{weatherData.city}</h1>

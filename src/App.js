@@ -8,11 +8,21 @@ function App() {
       <Weather defaultCity="Vancouver" />
 
       <p>
-        This app was coded by Steph Brosky and is
+        This app was coded by{" "}
         <a
-          href="https://github.com/SBrosky/react-weather"
+          href="https://stephbrosky.netlify.app/"
           target="_blank"
           rel="noreferrer"
+        >
+          {" "}
+          Steph Brosky
+        </a>{" "}
+        and is
+        <a
+          href="
+          https://github.com/SBrosky/react-weather"
+          rel="noreferrer"
+          target="_blank"
         >
           {" "}
           Open-Source
